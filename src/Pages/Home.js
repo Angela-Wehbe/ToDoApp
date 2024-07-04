@@ -5,7 +5,7 @@ function Home() {
     const { todos } = useContext(TodoContext);
     useEffect(() => {
         console.log('Todos:', todos);
-    }, []);
+    }, [todos]);
 
     return (
         <div className='Home'>
